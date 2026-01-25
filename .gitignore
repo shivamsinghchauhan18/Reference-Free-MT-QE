@@ -1,0 +1,33 @@
+# Exclude everything by default
+*
+
+# Unignore Python files
+!*.py
+
+# Always allow .gitignore
+!.gitignore
+
+# Explicitly ignore common artifacts even if they strictly match *.py (unlikely but good practice)
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# Directories to explicitly exclude (even if they contain .py files, though 'exclude *' handles files, we want to be sure about directory structures if needed, but 'exclude *' is usually enough. However, to match user request explicitly:)
+checkpoints/
+viz/
+visualizations/
+data/
+logs/
+venvs/
+venv/
+venv_stable/
+Metric_Scores/
+MT/
+
+# File types to explicitly ignore (redundant with 'exclude *' but good for clarity)
+*.md
+*.txt
+*.sh
+*.csv
+*.jsonl
