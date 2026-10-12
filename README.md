@@ -58,6 +58,14 @@ pip install torch transformers peft bitsandbytes lightning unbabel-comet sacrebl
 
 Fine-tuning the Gemma-3 regressor requires a CUDA GPU (4-bit quantisation via bitsandbytes).
 
+Run scripts as modules **from the repository root**, so the `models/` and `training/` packages resolve:
+
+```bash
+python -m training.train_metricx ...     # fine-tune the QE model
+python -m scripts.predict_metricx --checkpoint <ckpt> --src <src.txt> ...
+python -m unittest tests.test_metricx_local
+```
+
 ## Context
 
 Built in the TUM course *Projects in Natural Language Processing*, on the WMT 2025 DE→HSB data.

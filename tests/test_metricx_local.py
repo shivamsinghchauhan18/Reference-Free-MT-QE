@@ -2,8 +2,8 @@ import torch
 import unittest
 import shutil
 from transformers import AutoTokenizer
-from metricx_dataset import SorbianDataset
-from metricx_model import MetricX25Evaluator
+from models.metricx_dataset import SorbianDataset
+from models.metricx_model import MetricX25Evaluator
 
 class TestMetricX(unittest.TestCase):
     def setUp(self):

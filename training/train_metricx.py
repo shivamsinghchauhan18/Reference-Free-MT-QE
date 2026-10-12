@@ -9,8 +9,8 @@ import lightning.pytorch as pl
 from lightning.pytorch.callbacks import ModelCheckpoint
 from lightning.pytorch.loggers import CSVLogger
 
-from metricx_dataset import SorbianDataset
-from metricx_model import MetricX25Evaluator
+from models.metricx_dataset import SorbianDataset
+from models.metricx_model import MetricX25Evaluator
 
 class MetricXLightningModule(pl.LightningModule):
     def __init__(self, model_name, lr=1e-5, lora_r=16, margin=0.1, lambda_ranking=0.1):

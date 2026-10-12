@@ -1,7 +1,8 @@
 # Exclude everything by default
 *
 
-# Unignore Python files
+# Unignore directories (so new files in subfolders are seen) and Python files
+!*/
 !*.py
 
 # Always allow .gitignore
@@ -27,6 +28,7 @@ MT/
 
 # File types to explicitly ignore (redundant with 'exclude *' but good for clarity)
 *.md
+!README.md
 *.txt
 *.sh
 *.csv

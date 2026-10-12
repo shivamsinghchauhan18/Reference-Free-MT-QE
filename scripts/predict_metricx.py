@@ -8,10 +8,10 @@ from transformers import AutoTokenizer, DataCollatorWithPadding
 import lightning.pytorch as pl
 from tqdm import tqdm
 
-# Import local modules (assumed to be in the same directory)
-from metricx_model import MetricX25Evaluator
-from metricx_dataset import SorbianDataset
-from train_metricx import MetricXLightningModule
+# Local modules (run from the repo root: python -m scripts.predict_metricx)
+from models.metricx_model import MetricX25Evaluator
+from models.metricx_dataset import SorbianDataset
+from training.train_metricx import MetricXLightningModule
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
