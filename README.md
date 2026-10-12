@@ -35,7 +35,7 @@ On the 4,000-segment WMT 2025 DE→HSB development set (GPT-4o-mini few-shot out
 - Our QE model, trained on **749,080 synthetic pseudo-labelled examples**, clearly beats BLEU without seeing any reference, but still trails COMETKiwi. The likely reasons: a single training stage with no calibration stage, and labels distilled entirely from COMET.
 - LLM judges look strong overall (r up to 0.76) but drop 40–65 % once you condition on the MT system. Their apparent agreement comes mostly from separating systems, not individual segments.
 
-Full write-up: *Reference-Free Quality Estimation and Meta-Evaluation for German-to-Upper-Sorbian Machine Translation* — Shivam Singh Chauhan & Paul Hagner, TUM.
+Full write-up: *Reference-Free Quality Estimation and Meta-Evaluation for German-to-Upper-Sorbian Machine Translation*, by Shivam Singh Chauhan and Paul Hagner (TUM).
 
 ## Repository layout
 
